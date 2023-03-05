@@ -1,0 +1,29 @@
+nav {
+    background: pink;
+
+    ul {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        li {
+            list-style: none;
+        }
+    }
+}
+h1 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 3rem;
+    text-align: center;
+
+    &::after {
+        content: "*";
+        position: absolute;
+        transform: translateY(-6px);
+        color: pink;
+    }
+
+    &:hover::after {
+        font-size: 2em;
+    }
+}
